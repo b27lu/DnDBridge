@@ -1,5 +1,6 @@
 import React from 'react';
 import hljs from 'highlight.js';
+import sketchfile from './Fitness_App.sketch';
 
 export default class Render extends React.Component {
   constructor(...args) {
@@ -15,6 +16,7 @@ export default class Render extends React.Component {
   };
 
   render() {
+    console.log(sketchfile);
     return (
       <div className="app-component">
         <nav className="app-nav">

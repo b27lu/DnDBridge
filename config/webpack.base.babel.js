@@ -79,6 +79,10 @@ module.exports = (options) => ({
           },
         },
       },
+      {
+        test: /\.sketch$/,
+        use: path.resolve('./config/sketch-loader.js'),
+      }
     ],
   },
   plugins: options.plugins.concat([
